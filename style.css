@@ -1,4 +1,17 @@
+@font-face {
+  font-family: 'Devil Breeze Bold';
+  src: url('../Devil Breeze Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes BackgroundColour {
+  0%   { background-color: rgb(230, 255, 255); }
+  50%  { background-color: rgb(230, 255, 220); }
+  100% { background-color: rgb(230, 255, 255); }
+}
+
 body {
-    font: Arial, sans-serif;
-    background-color: rgb(224, 248, 253);
-  }
+  font-family: 'Devil Breeze Bold', sans-serif;
+  animation: BackgroundColour 15s infinite;
+}
