@@ -12,6 +12,31 @@
 }
 
 body {
-  font-family: 'Devil Breeze Bold';
   animation: BackgroundColour 15s infinite;
+}
+
+h1 {
+  font-family: 'Devil Breeze Bold';
+  font-size: 40px;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  font-size: 14px;
+  font-family: verdana;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.smallerText {
+  font-size: 11px;
 }
