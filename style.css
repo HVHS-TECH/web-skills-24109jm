@@ -20,15 +20,14 @@ h1 {
   font-size: 40px;
 }
 
-.boxes {
-  display: flex;
-  gap: 20px;
+img {
+  border-radius: 8px;
+  width: 275px;
+  height: 275px;
 }
 
-.box {
-  font-size: 14px;
-  font-family: verdana;
-  width: 300px;
+.navBar {
+  width: 870px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 1px;
@@ -37,6 +36,64 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.boxes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  font-size: 14px;
+  font-family: verdana;
+  width: 250px;
+  height: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bigBox {
+  font-size: 14px;
+  font-family: verdana;
+  width: 870px;
+  height: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+}
+
+.imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.imageBox h6 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.h6s {
+  display: flex;
+  font-size: 25px;
+  gap: 20px;
+}
 .smallerText {
   font-size: 11px;
 }
