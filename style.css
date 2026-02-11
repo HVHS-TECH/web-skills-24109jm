@@ -6,9 +6,9 @@
 }
 
 @keyframes BackgroundColour {
-  0%   { background-color: rgb(230, 255, 255); }
-  50%  { background-color: rgb(230, 255, 220); }
-  100% { background-color: rgb(230, 255, 255); }
+  0%   { background-color: rgb(211, 255, 255); }
+  50%  { background-color: rgb(212, 255, 194); }
+  100% { background-color: rgb(211, 255, 255); }
 }
 
 body {
@@ -16,8 +16,48 @@ body {
 }
 
 h1 {
+  margin-right: auto;
+  color: rgb(0, 0, 0);
   font-family: 'Devil Breeze Bold';
   font-size: 40px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.current button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 img {
@@ -46,7 +86,6 @@ img {
   font-size: 14px;
   font-family: verdana;
   width: 250px;
-  height: 450px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 1px;
@@ -59,7 +98,6 @@ img {
   font-size: 14px;
   font-family: verdana;
   width: 870px;
-  height: 450px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 1px;
@@ -88,6 +126,11 @@ img {
   text-align: center;
 }
 
+.box img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+}
 
 .h6s {
   display: flex;
