@@ -85,7 +85,7 @@ img {
 .box {
   font-size: 14px;
   font-family: verdana;
-  width: 28.74%;
+  width: 31%;
   padding: 1px 20px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -111,7 +111,7 @@ img {
 
 .images {
   display: flex;
-  gap: 20px;
+  gap: 10%;
 }
 
 .imageBox {
@@ -122,7 +122,7 @@ img {
 
 img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: auto;
 }
 
 .imageBox h6 {
@@ -133,8 +133,8 @@ img {
 
 .box img {
   margin-top: auto;
-  width: 28.74;
-  height: 250px;
+  width: 100%;
+  height: auto;
   margin-bottom: 15px;
 }
 
