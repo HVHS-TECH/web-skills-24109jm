@@ -12,7 +12,6 @@ function resizeCanvas() {
   canvas.width = rect.width;
   canvas.height = rect.height;
 
-  // Calculate tile size to fit 20x20 grid
   gridSize = Math.min(canvas.width / tileCountX, canvas.height / tileCountY);
 }
 
@@ -42,21 +41,17 @@ function placeFood() {
 }
 
 function draw() {
-  // Background
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // Food
   ctx.fillStyle = "red";
   ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
 
-  // Snake
   ctx.fillStyle = "lime";
   snake.forEach(seg => {
     ctx.fillRect(seg.x * gridSize, seg.y * gridSize, gridSize - 1, gridSize - 1);
   });
 
-  // Score
   ctx.fillStyle = "white";
   ctx.font = `${Math.floor(gridSize)}px Arial`;
   ctx.fillText("Score: " + score, 10, gridSize);
@@ -67,7 +62,6 @@ function update() {
 
   const head = { x: snake[0].x + velocity.x, y: snake[0].y + velocity.y };
 
-  // Check collisions
   if (
     head.x < 0 || head.x >= tileCountX ||
     head.y < 0 || head.y >= tileCountY ||
